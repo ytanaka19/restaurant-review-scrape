@@ -1,4 +1,4 @@
-name: Scrape and save reviews data
+name: Scrape
 
 on:
   schedule:
