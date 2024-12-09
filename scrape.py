@@ -19,7 +19,7 @@ key_update = os.environ.get('KEY_UPDATE')
 
 
 DATE_FORMAT = "%Y-%m-%d"
-TIME_FORMAT = "%H:%M:%S"
+TIME_FORMAT = "%H-%M-%S"
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
