@@ -149,8 +149,11 @@ def fetch_review(to_fetch):
 
 
 def main():
-    to_fetch = get_rest_to_fetch()
-    fetch_review(to_fetch)
+    #to_fetch = get_rest_to_fetch()
+    #fetch_review(to_fetch)
+    print('cwd=', os.getcwd())
+    print(os.listdir())
+    return
 
 
 main()
