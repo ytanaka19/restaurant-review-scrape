@@ -99,6 +99,9 @@ def save_csv(lines):
     csv_header = 'rest, updated, total'
     for i in range(1, 6):
         csv_header = f'{csv_header}, count{i}, pc{i}'
+    # create folder if not exists
+    if not os.path.exists('data'):
+	    os.makedirs('data')
     with open(f'./data/{fname}.csv', 'w') as f:
         f.write('\n'.join([csv_header] + lines))
 
@@ -149,10 +152,8 @@ def fetch_review(to_fetch):
 
 
 def main():
-    #to_fetch = get_rest_to_fetch()
-    #fetch_review(to_fetch)
-    print('cwd=', os.getcwd())
-    print(os.listdir())
+    to_fetch = get_rest_to_fetch()
+    fetch_review(to_fetch)
     return
 
 
